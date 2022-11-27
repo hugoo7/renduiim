@@ -1,0 +1,215 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(214, 200, 200);
+}
+
+.navbarre{
+    background-color: rgb(133, 10, 133);
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+
+.boutton{
+    background-color: rgb(133, 10, 133);
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2rem;
+    font-size: 25px;
+}
+
+.boutton:hover{
+    background-color: rgb(88, 0, 88);
+    transition: ease;
+    transition-duration: 0.2s;
+}
+
+.presentation{
+    background-color: rgb(175, 20, 175);
+    height: 240px;
+    width: 400px;
+    margin-top: 200px;
+    margin-left: 300px;
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 300px;
+    transition: 0.2s;
+}
+
+.presentation:hover{
+    background-color: rgb(88, 0, 88)
+}
+
+.pres{
+    margin-left: 20px;
+    padding-top: 10px;
+    color: white;
+}
+
+.photomoi{
+    width: 40%;
+    margin-top: -80%;
+    margin-left: 700px;
+    border-radius: 30px;
+}
+
+button{
+    background-color: rgb(134, 13, 134);
+    border: 0;
+    height: 100px;
+    padding: 200px;
+    padding-right: 400px;
+    padding-bottom: 300px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 50px;
+    box-shadow: 18px 18px 0px black;
+    text-align: center;
+}
+
+button:hover{
+    padding-right: 465px;
+    box-shadow: 25px 25px 0px black;
+}
+
+.anim{
+    box-shadow: 0 0 0 0 black;
+    animation: ombre 1s infinite;
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+@keyframes ombre {
+    to {
+        box-shadow: 0 0 0 18px rgba(0, 0, 0, 0.01);
+    }
+}
+
+img{
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+
+
+p1{
+    font-size: 20px;
+    margin-left: -50px;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    color: rgb(241, 235, 235);
+    margin-top: -100px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+.violet{
+    height: 410px;
+    width: 900px;
+    background-color: rgb(134, 13, 134);  
+}
+
+.photo{
+    width: 50%;
+    margin-top: 200px;
+}
+
+.photo2{
+    width: 50%;
+    margin-left: 800px;
+    margin-top: -480px;
+}
+
+p2{
+    font-size: 20px;
+    color: white;
+}
+
+
+h3{
+    font-size: 40px;
+}
+
+.grid{
+    display: grid;
+    background-color: rgb(134, 13, 134);
+    height: 200px;
+    margin-left: 75px;
+    margin-right: 500px;
+}
+
+p3{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.logoiim {
+    animation: 2s infinite linear tourne;
+    width: 3%;
+    margin-right: 200px;
+}
+
+@keyframes tourne{
+    0%{
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 800px) {
+    .navbarre {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .presentation{
+        height: auto;
+        margin: 0;
+        margin-left: 100px;
+        margin-top: 50px;
+        padding-bottom: 30px;
+    }
+    .photomoi{
+        height: auto;
+        margin: 50px;
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    .anim{
+        height: auto;
+        margin: 20px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    button{
+        height: auto;
+        margin: 0;
+    }
+    p1{
+        height: auto;
+        font-weight: 50px;
+    }
+
+}
